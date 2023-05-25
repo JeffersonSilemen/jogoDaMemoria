@@ -3,7 +3,7 @@ let game = {
     firstCard: null,
     secondCard: null,
     techs: [
-        'Bootstrap',
+        'bootstrap',
         'css',
         'electron',
         'firebase',
