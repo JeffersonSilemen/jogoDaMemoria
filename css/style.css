@@ -1,19 +1,19 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: 'Righteous', sans-serif;
-    background-color: #c7cdd3;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: rgb(27, 4, 34);
 }
 
-.card {
+.card{
     width: 150px;
     height: 150px;
     position: relative;
@@ -21,59 +21,61 @@ body {
     transition: transform .5s;
 }
 
-.cardFront,
-.cardBack {
+.card_front, .card_back{
     width: 100%;
     height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
     backface-visibility: hidden;
 }
 
-.flip {
+.flip{
     transform: rotateY(180deg);
 }
 
-.cardFront {
-    background-color: #101c2c;
+.card_front{
+    background-color: rgb(45, 9, 78);
     transform: rotateY(180deg);
 }
 
-.cardBack {
-    background-color: #05c3ff;
-    color: #101c2c;
-    font-size: 30px;
+.card_back{
+    background-color: rgb(131, 43, 214);
+    font-size: 20px;
+    color: rgb(45, 9, 78);
 }
 
-#gameover {
+#gameOver{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 30px;
     color: white;
-    font-size: 50px;
     display: none;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     top: 0;
 }
 
-#restart {
+#restart{
     padding: 20px;
     font-size: 20px;
     background-color: yellow;
     border: none;
     border-radius: 10px;
     margin-top: 10px;
+}
+
+#restart:hover{
     cursor: pointer;
 }
 
-#gameBoard {
+#gameBoard{
     max-width: 700px;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
