@@ -73,7 +73,7 @@ body {
     cursor: pointer;
 }
 
-#gameboard {
+#gameBoard {
     max-width: 700px;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
